@@ -1,0 +1,116 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 300 !important;
+    color: #67757c !important;
+    background-color:#ffffff!important;
+}
+
+.wrapper-padding{
+padding: 1% 1% 1% 1% ;
+}
+.table-img{
+	width:60px;
+	height:auto;
+}
+
+.loading-icon{
+	width:100px;
+	height:auto;
+}
+
+.form-control:focus {
+  border-color: #FF0000;
+  box-shadow: none;
+}
+
+.count-card-text{
+	font-size: 14px;
+}
+.count-card-title{
+	font-size: 24px;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.imgPreview{
+    border: none;
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+}
+
+.imgOnRow{
+    border: none !important;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+
+/* social share icon */
+
+.social-btn-sp #social-links {
+      margin: 0 auto;
+      max-width: 500px;
+  }
+  .social-btn-sp #social-links ul li {
+      display: inline-block;
+  }
+  .social-btn-sp #social-links ul li a {
+      padding: 10px;
+      margin: 1px;
+      font-size: 26px;
+  }
+    #social-links .fa-facebook-square{
+           color: #3b5998;
+     }
+     #social-links .fa-twitter{
+           color: deepskyblue;
+     }
+     #social-links .fa-linkedin{
+           color: #0e76a8;
+     }
+     #social-links .fa-whatsapp{
+          color: #25D366
+     }
+     #social-links .fa-reddit{
+          color: #FF4500;;
+     }
+     #social-links .fa-telegram{
+          color: #0088cc;
+     }
+/* add to cart btn */
+
+.addToCartBtn,.addToCartBtn:hover, .addToCartBtn:active,.addToCartBtn:focus {
+  outline: none !important;
+   box-shadow: none;
+}
+
+/* .collapse:not(.show) {
+  display: block;
+} */
+
+#navbarSupportedContent{
+  display: block;
+}
+
+.btn-plus, .btn-plus:hover, .btn-plus:active,.btn-plus:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn-minus, .btn-minus:hover, .btn-minus:active,.btn-minus:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.text-start-important{
+  text-align: start!important;
+}

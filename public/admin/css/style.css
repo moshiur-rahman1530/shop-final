@@ -1,0 +1,321 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 300 !important;
+    color: #67757c !important;
+    background-color:#ffffff!important;
+}
+
+.wrapper-padding{
+padding: 1% 1% 1% 1% ;
+}
+.table-img{
+	width:60px;
+	height:auto;
+}
+
+.loading-icon{
+	width:100px;
+	height:auto;
+}
+
+.form-control:focus {
+  border-color: #FF0000;
+  box-shadow: none;
+}
+
+.count-card-text{
+	font-size: 14px;
+}
+.count-card-title{
+	font-size: 24px;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.imgPreview{
+    border: none;
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+}
+
+.imgOnRow{
+    border: none !important;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+select{
+  display: block!important;
+}
+
+
+/* product page  */
+
+/* bootstrap-tagsinput.css file - add in local */
+
+.bootstrap-tagsinput {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: block;
+  padding: 10px 6px;
+  color: #555;
+  /* vertical-align: middle; */
+  border-radius: 4px;
+  max-width: 100%;
+  line-height: 22px;
+  cursor: text;
+}
+.bootstrap-tagsinput input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 6px;
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+}
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+  margin-right: 2px;
+  color: #5BC0DE;
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  content: "x";
+  color: red;
+  padding: 0px 2px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+
+/* table css */
+/* .table{
+   display: block !important;
+   overflow-x: auto !important;
+   width: 100% !important;
+ } */
+
+ table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.table-responsive::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.table-responsive::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+.table-responsive::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+/* dropdown */
+.dropdown-menu{
+  min-width: 8rem!important;
+
+}
+
+.modal {
+  overflow-y: auto !important;
+}
+
+.imgStyleOnRow{
+  border: none !important;
+  width: 100%;
+  object-fit: cover;
+  height: 240px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 260px;
+  border: none !important;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* product preview */
+.productpreviewimagestyle{
+  width: 120px;
+  height: 100px;
+  margin: 5px;
+}
+
+
+/* photo page */
+.custom-file-button input[type="file"] {
+  margin-left: -2px !important;
+}
+.custom-file-button input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+.custom-file-button input[type="file"]::file-selector-button {
+  display: none;
+}
+.custom-file-button:hover label {
+  background-color: #dde0e3;
+  cursor: pointer;
+}
+
+.clipboardFn{
+  margin: 5px!important;
+  padding: 0.5rem 0.8rem!important;
+  
+}
+.downloadFn{
+ margin: 5px!important;
+ padding: 0.5rem 0.8rem!important;
+}
+.deleteImagegfn{
+  margin: 5px!important;
+  padding: 0.5rem 0.8rem!important;
+}
+
+.usercard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  /* margin: auto; */
+  text-align: center;
+}
+
+.usertitle {
+  color: grey;
+  font-size: 18px;
+}
+.userdetailsbtn{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.userdetailsbtn:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+.activeusercard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  /* margin: auto; */
+  text-align: center;
+}
+
+.activeusertitle {
+  color: grey;
+  font-size: 18px;
+}
+.activeuserdetailsbtn{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.activeuserdetailsbtn2{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #0866C6;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.activeuserdetailsbtn:hover, a:hover {
+  opacity: 0.7;
+}
+.activeuserdetailsbtn2:hover, a:hover {
+  opacity: 0.7;
+}
