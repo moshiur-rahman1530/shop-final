@@ -39,14 +39,15 @@
 
         <div class="form-group">
           <label for="inputPhoto" class="col-form-label">Logo <span class="text-danger">*</span></label>
-          <div class="input-group">
-              <span class="input-group-btn">
-                  <a id="lfm1" data-input="thumbnail1" data-preview="holder1" class="btn btn-primary">
-                  <i class="fa fa-picture-o"></i> Choose
-                  </a>
-              </span>
-          <input id="thumbnail1" class="form-control" type="text" name="logo" value="{{$data->logo}}">
-        </div>
+          
+         <div>
+         <img src="{{$data->logo}}" class="my-2" style="width:140px">
+         </div>
+          <div>
+          <input type="file" class="my-2" name="logo1" id="thumbnail1">
+          </div>
+
+          
         <div id="holder1" style="margin-top:15px;max-height:100px;"></div>
 
           @error('logo')
@@ -56,13 +57,13 @@
 
         <div class="form-group">
           <label for="inputPhoto" class="col-form-label">Photo <span class="text-danger">*</span></label>
-          <div class="input-group">
-              <span class="input-group-btn">
-                  <a id="lfm" data-input="thumbnail1" data-preview="holder" class="btn btn-primary">
-                  <i class="fa fa-picture-o"></i> Choose
-                  </a>
-              </span>
-          <input id="thumbnail2" class="form-control" type="text" name="photo" value="{{$data->photo}}">
+          <div>
+          <img src="{{$data->photo}}" class="my-2" style="width:140px">
+          </div>
+          <div>
+          <input type="file" class="my-2" name="photo1" id="thumbnail2">
+
+          
         </div>
         <div id="holder" style="margin-top:15px;max-height:100px;"></div>
 
@@ -196,51 +197,59 @@
           <div class="vendor1 col-12 col-md-3">
             <input type="hidden" id="profile-photo1" name="profile-photo1" value="{{$data->vendor1}}">
             <img src="{{$data->vendor1}}" id="profile-photo1-preview" style="width:140px">
-            <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo1')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 1</span></button>
+            <!-- <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo1')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 1</span></button> -->
+            <input type="file" class="my-2" name="vendor1" id="vendor1">
           </div>
           <!-- vendor image 2 -->
           <div class="vendor2 col-12 col-md-3">
             <input type="hidden" id="profile-photo2" name="profile-photo2" value="{{$data->vendor2}}">
             <img src="{{$data->vendor2}}" id="profile-photo2-preview" style="width:140px">
-            <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo2')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 2</span></button>
+            <!-- <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo2')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 2</span></button> -->
+            <input type="file" class="my-2" name="vendor2" id="vendor2">
           </div>
           
           <!-- vendor image 3 -->
           <div class="vendor3 col-12 col-md-3">
             <input type="hidden" id="profile-photo3"  name="profile-photo3" value="{{$data->vendor3}}">
             <img src="{{$data->vendor3}}" id="profile-photo3-preview" style="width:140px">
-            <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo3')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 3</span></button>
+            <!-- <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo3')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 3</span></button> -->
+            <input type="file" class="my-2" name="vendor3" id="vendor3">
           </div>
           <!-- vendor image 4 -->
           <div class="vendor4 col-12 col-md-3">
             <input type="hidden" id="profile-photo4"  name="profile-photo4" value="{{$data->vendor4}}">
             <img src="{{$data->vendor4}}" id="profile-photo4-preview" style="width:140px">
-            <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo4')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 4</span></button>
+            <!-- <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo4')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 4</span></button> -->
+            <input type="file" class="my-2" name="vendor4" id="vendor4">
           </div>
           
           <!-- vendor image 5 -->
           <div class="vendor5 col-12 col-md-3">
             <input type="hidden" id="profile-photo5"  name="profile-photo5" value="{{$data->vendor5}}">
             <img src="{{$data->vendor5}}" id="profile-photo5-preview" style="width:140px">
-            <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo5')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 5</span></button>
+            <!-- <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo5')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 5</span></button> -->
+            <input type="file" class="my-2" name="vendor5" id="vendor5">
           </div>
           <!-- vendor image 6 -->
           <div class="vendor6 col-12 col-md-3">
             <input type="hidden" id="profile-photo6"  name="profile-photo6" value="{{$data->vendor6}}">
             <img src="{{$data->vendor6}}" id="profile-photo6-preview" style="width:140px">
-            <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo6')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 6</span></button>
+            <!-- <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo6')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 6</span></button> -->
+            <input type="file" class="my-2" name="vendor6" id="vendor6">
           </div>
           <!-- vendor image 7 -->
           <div class="vendor7 col-12 col-md-3">
             <input type="hidden" id="profile-photo7"  name="profile-photo7" value="{{$data->vendor7}}">
             <img src="{{$data->vendor7}}" id="profile-photo7-preview" style="width:140px">
-            <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo7')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 7</span></button>
+            <!-- <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo7')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 7</span></button> -->
+            <input type="file" class="my-2" name="vendor7" id="vendor7">
           </div>
           <!-- vendor image 8 -->
           <div class="vendor8 col-12 col-md-3">
             <input type="hidden" id="profile-photo8"  name="profile-photo8" value="{{$data->vendor8}}">
             <img src="{{$data->vendor8}}" id="profile-photo8-preview" style="width:140px">
-            <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo8')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 8</span></button>
+            <!-- <button class="btn btn-sm btn-info" onclick="filemanager.selectFile('profile-photo8')"><i class="fa fa-check-circle fa-2x align-bottom"></i> <span class="align-middle">Choose Vendor Img 8</span></button> -->
+            <input type="file" class="my-2" name="vendor8" id="vendor8">
           </div>
         </div>
 
@@ -279,8 +288,10 @@ $(document).ready(function (e) {
     var title_remain = $('#title_remain').val();
     var short_des = $('#quote').val();
     var description = $('#description').val();
-    var logo = $('#thumbnail1').val();
-    var photo = $('#thumbnail2').val();
+    var logo = $('#thumbnail1')[0].files[0];
+    var photo = $('#thumbnail2')[0].files[0];
+    // var logo = $('#thumbnail1').val();
+    // var photo = $('#thumbnail2').val();
     var address1 = $('#address1').val();
     var address2 = $('#address2').val();    
     var email = $('#email').val();
@@ -296,21 +307,89 @@ $(document).ready(function (e) {
     var feature3 = $('#feature3').val();
     var icon4 = $('#icon4').val();
     var feature4 = $('#feature4').val();
-    var vendor1 = $('#profile-photo1').val();
-    var vendor2 = $('#profile-photo2').val();
-    var vendor3 = $('#profile-photo3').val();
-    var vendor4 = $('#profile-photo4').val();
-    var vendor5 = $('#profile-photo5').val();
-    var vendor6 = $('#profile-photo6').val();
-    var vendor7 = $('#profile-photo7').val();
-    var vendor8 = $('#profile-photo8').val();
+  
+    if ($('#vendor1').val().length>0) {
+      var vendor1 = $('#vendor1')[0].files[0];
+    }else{
+      var vendor1 = $('#profile-photo1').val();
+    }
 
+    if ($('#vendor2').val().length>0) {
+      var vendor2 = $('#vendor2')[0].files[0];
+    }else{
+      var vendor2 = $('#profile-photo2').val();
+    }
+    if ($('#vendor3').val().length>0) {
+      var vendor3 = $('#vendor3')[0].files[0];
+    }else{
+      var vendor3 = $('#profile-photo3').val();
+    }
+    
+    if ($('#vendor4').val().length>0) {
+      var vendor4 = $('#vendor4')[0].files[0];
+    }else{
+      var vendor4 = $('#profile-photo4').val();
+    }
+    
+    if ($('#vendor5').val().length>0) {
+      var vendor5 = $('#vendor5')[0].files[0];
+    }else{
+      var vendor5 = $('#profile-photo5').val();
+    }
+    
+    if ($('#vendor6').val().length>0) {
+      var vendor6 = $('#vendor6')[0].files[0];
+    }else{
+      var vendor6 = $('#profile-photo6').val();
+    }
+    if ($('#vendor7').val().length>0) {
+      var vendor7 = $('#vendor7')[0].files[0];
+    }else{
+      var vendor7 = $('#profile-photo7').val();
+    }
+    if ($('#vendor8').val().length>0) {
+      var vendor8 = $('#vendor8')[0].files[0];
+    }else{
+      var vendor8 = $('#profile-photo8').val();
+    }
+
+
+    var form_data = new FormData(); 
+    form_data.append("vendor1", vendor1);
+    form_data.append("vendor2", vendor2);
+    form_data.append("vendor3", vendor3);
+    form_data.append("vendor4", vendor4);
+    form_data.append("vendor5", vendor5);
+    form_data.append("vendor6", vendor6);
+    form_data.append("vendor7", vendor7);
+    form_data.append("vendor8", vendor8);
+    form_data.append("title_first_letter", title_first_letter);
+    form_data.append("title_remain", title_remain);
+    form_data.append("short_des", short_des);
+    form_data.append("description", description);
+    form_data.append("logo", logo);
+    form_data.append("photo", photo);
+    form_data.append("address1", address1);
+    form_data.append("address2", address2);
+    form_data.append("email", email);
+    form_data.append("phone", phone);
+    form_data.append("footer1", footer1);
+    form_data.append("footer2", footer2);
+    form_data.append("footer3", footer3);
+    form_data.append("icon1", icon1);
+    form_data.append("icon2", icon2);
+    form_data.append("icon3", icon3);
+    form_data.append("icon4", icon4);
+    form_data.append("feature1", feature1);
+    form_data.append("feature2", feature2);
+    form_data.append("feature3", feature3);
+    form_data.append("feature4", feature4);
+    
 
     console.log(title_first_letter,title_remain,short_des,description,logo,photo,address1,address2,email,phone,footer1,footer2,footer3,icon1,icon2,icon3,icon4,feature1,feature2,feature3,feature4,vendor1,vendor2,vendor3,vendor4,vendor5,vendor6,vendor7,vendor8);
 
-    axios.post('/setting/update',{
-      title_first_letter:title_first_letter,title_remain:title_remain,short_des:short_des,description:description,logo:logo,photo:photo,address1:address1,address2:address2,email:email,phone:phone,footer1:footer1,footer2:footer2,footer3:footer3,icon1:icon1,icon2:icon2,icon3:icon3,icon4:icon4,feature1:feature1,feature2:feature2,feature3:feature3,feature4:feature4,vendor1:vendor1,vendor2:vendor2,vendor3:vendor3,vendor4:vendor4,vendor5:vendor5,vendor6:vendor6,vendor7:vendor7,vendor8:vendor8
-    }).then(function (response) {
+    axios.post('/setting/update', form_data
+    ).then(function (response) {
                
 if (response.data==1) {
   toastr.success('Update Successfull!!');
